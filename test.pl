@@ -1,16 +1,12 @@
 # Before `make install' is performed this script should be runnable with
 # `make test'. After `make install' it should work as `perl test.pl'
 
-######################### We start with some black magic to print on failure.
+use Test::Simple tests => 5;
 
-# Change 1..1 below to 1..last_test_to_print .
-# (It may become useful if the test is moved to ./t subdirectory.)
-
-BEGIN { $| = 1; print "1..5\n"; }
 END {print "not ok 1\n" unless $loaded;}
 use Tie::Hash::Cannabinol;
 $loaded = 1;
-print "ok 1\n";
+ok($loaded);
 
 ######################### End of black magic.
 
@@ -18,12 +14,10 @@ print "ok 1\n";
 # (correspondingly "not ok 13") depending on the success of chunk 13
 # of the test code):
 
-my %hash;
-
-tie %hash, 'Tie::Hash::Cannabinol';
+my %hash : Stoned;
 
 my @keys = qw(one two three four);
 
 @hash{@keys} = 1 .. 4;
 
-print "ok $_\n" for 2 .. 5;
+ok(1) for 2 .. 5;
