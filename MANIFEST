@@ -2,6 +2,7 @@ Cannabinol.pm
 Changes
 Makefile.PL
 MANIFEST
-test.pl
+t/test.t
+t/pod.t
 COPYING
 README
