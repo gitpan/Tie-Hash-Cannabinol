@@ -1,4 +1,4 @@
-# $Id: Cannabinol.pm,v 1.7 2004/10/23 09:36:50 dave Exp $
+# $Id: Cannabinol.pm,v 1.8 2004/10/23 09:47:21 dave Exp $
 
 =head1 NAME
 
@@ -28,16 +28,17 @@ won't be able to retrieve any information you ask it for. Any information
 that it does return will be pulled at random from its keys.
 
 Oh, and the return value from C<exists> isn't to be trusted either :)
-package Tie::Hash::Cannabinol; 
 
 =cut
+
+package Tie::Hash::Cannabinol; 
 
 use strict;
 use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
 
-$VERSION = sprintf "%d.%02d", '$Revision: 1.7 $ ' =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", '$Revision: 1.8 $ ' =~ /(\d+)\.(\d+)/;
 @ISA = qw(Tie::StdHash);
 
 =head2 STORE
@@ -101,6 +102,9 @@ perl(1), perltie(1), Tie::StdHash(1)
 
 #
 # $Log: Cannabinol.pm,v $
+# Revision 1.8  2004/10/23 09:47:21  dave
+# Fixed problems caused by moving POD around in the last version.
+#
 # Revision 1.7  2004/10/23 09:36:50  dave
 # Improved test coverage.
 #
