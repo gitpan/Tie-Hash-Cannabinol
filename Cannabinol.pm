@@ -12,9 +12,12 @@
 #   This script is free software; you can redistribute it and/or
 #   modify it under the same terms as Perl itself.
 #
-# $Id: Cannabinol.pm,v 1.1 2001/09/02 17:06:18 dave Exp dave $
+# $Id: Cannabinol.pm,v 1.2 2001/09/03 19:58:08 dave Exp dave $
 #
 # $Log: Cannabinol.pm,v $
+# Revision 1.2  2001/09/03 19:58:08  dave
+# Minor fixes
+#
 # Revision 1.1  2001/09/02 17:06:18  dave
 # Initial revision
 #
@@ -25,7 +28,7 @@ use strict;
 use vars qw($VERSION @ISA);
 use Tie::Hash;
 
-$VERSION = sprintf "%d.%02d", '$Revision: 1.1 $ ' =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", '$Revision: 1.2 $ ' =~ /(\d+)\.(\d+)/;
 @ISA = qw(Tie::StdHash);
 
 # Preloaded methods go here.
@@ -52,6 +55,7 @@ sub EXISTS {
 
 1;
 __END__
+
 
 =head1 NAME
 
