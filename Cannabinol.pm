@@ -12,9 +12,12 @@
 #   This script is free software; you can redistribute it and/or
 #   modify it under the same terms as Perl itself.
 #
-# $Id: Cannabinol.pm,v 1.4 2001/12/09 19:12:54 dave Exp dave $
+# $Id: Cannabinol.pm,v 1.5 2002/07/12 18:32:21 dave Exp $
 #
 # $Log: Cannabinol.pm,v $
+# Revision 1.5  2002/07/12 18:32:21  dave
+# Corrected Attribute::Handlers dependency.
+#
 # Revision 1.4  2001/12/09 19:12:54  dave
 # Added Attribute::Handlers interface.
 #
@@ -28,14 +31,14 @@
 # Initial revision
 #
 
-package Tie::Hash::Cannabinol;
+package Tie::Hash::Cannabinol; 
 
 use strict;
 use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { __CALLER__::Stoned => __PACKAGE__ };
 
-$VERSION = sprintf "%d.%02d", '$Revision: 1.4 $ ' =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", '$Revision: 1.5 $ ' =~ /(\d+)\.(\d+)/;
 @ISA = qw(Tie::StdHash);
 
 # Preloaded methods go here.
