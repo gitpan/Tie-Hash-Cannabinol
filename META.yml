@@ -1,13 +1,10 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         Tie-Hash-Cannabinol
-version:      1.08
-version_from: Cannabinol.pm
+version:      1.09
+version_from: lib/Tie/Hash/Cannabinol.pm
 installdirs:  site
 requires:
-    Attribute::Handlers:           0.76
-    Test::Pod:                     0
-    Test::Simple:                  0
 
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.21
+generated_by: ExtUtils::MakeMaker version 6.17

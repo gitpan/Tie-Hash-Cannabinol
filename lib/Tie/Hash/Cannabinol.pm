@@ -1,4 +1,4 @@
-# $Id: Cannabinol.pm,v 1.8 2004/10/23 09:47:21 dave Exp $
+# $Id: Cannabinol.pm,v 1.9 2005/08/14 11:35:57 dave Exp $
 
 =head1 NAME
 
@@ -38,7 +38,7 @@ use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
 
-$VERSION = sprintf "%d.%02d", '$Revision: 1.8 $ ' =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d.%02d", '$Revision: 1.9 $ ' =~ /(\d+)\.(\d+)/;
 @ISA = qw(Tie::StdHash);
 
 =head2 STORE
@@ -87,6 +87,12 @@ __END__
 
 Dave Cross <dave@dave.org.uk>
 
+=head1 UPDATES
+
+The latest version of this module will always be available from
+L<http://dave.org.uk/code/Tie-Hash-Cannabinol> or from CPAN
+at L<http://search.cpan.org/dist/Tie-Hash-Cannabinol/>.
+
 =head1 COPYRIGHT
 
 Copyright (C) 2001, Magnum Solutions Ltd.  All Rights Reserved.
@@ -102,6 +108,9 @@ perl(1), perltie(1), Tie::StdHash(1)
 
 #
 # $Log: Cannabinol.pm,v $
+# Revision 1.9  2005/08/14 11:35:57  dave
+# Added details of where to get updates.
+#
 # Revision 1.8  2004/10/23 09:47:21  dave
 # Fixed problems caused by moving POD around in the last version.
 #
