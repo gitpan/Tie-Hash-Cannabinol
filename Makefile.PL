@@ -5,7 +5,12 @@ WriteMakefile
           'PL_FILES' => {},
           'INSTALLDIRS' => 'site',
           'NAME' => 'Tie::Hash::Cannabinol',
+          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/Tie/Hash/Cannabinol.pm',
-          'PREREQ_PM' => {}
+          'PREREQ_PM' => {
+                           'Test::More' => 0,
+                           'Attribute::Handlers' => 0,
+                           'Tie::Hash' => 0
+                         }
         )
 ;

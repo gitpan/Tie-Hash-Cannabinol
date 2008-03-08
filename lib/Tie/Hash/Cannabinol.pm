@@ -1,4 +1,4 @@
-# $Id: Cannabinol.pm,v 1.9 2005/08/14 11:35:57 dave Exp $
+# $Id: Cannabinol.pm 28 2008-03-08 12:01:49Z dave $
 
 =head1 NAME
 
@@ -33,12 +33,14 @@ Oh, and the return value from C<exists> isn't to be trusted either :)
 
 package Tie::Hash::Cannabinol; 
 
+use 5.006;
 use strict;
+use warnings;
 use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
 
-$VERSION = sprintf "%d.%02d", '$Revision: 1.9 $ ' =~ /(\d+)\.(\d+)/;
+$VERSION = sprintf "%d", '$Revision: 28 $ ' =~ /(\d+)/;
 @ISA = qw(Tie::StdHash);
 
 =head2 STORE
@@ -85,17 +87,19 @@ __END__
 
 =head1 AUTHOR
 
-Dave Cross <dave@dave.org.uk>
+Dave Cross <dave@mag-sol.com>
 
 =head1 UPDATES
 
 The latest version of this module will always be available from
-L<http://dave.org.uk/code/Tie-Hash-Cannabinol> or from CPAN
+L<http://code.mag-sol.com/Tie-Hash-Cannabinol> or from CPAN
 at L<http://search.cpan.org/dist/Tie-Hash-Cannabinol/>.
 
 =head1 COPYRIGHT
 
-Copyright (C) 2001, Magnum Solutions Ltd.  All Rights Reserved.
+Copyright (C) 2001-8, Magnum Solutions Ltd.  All Rights Reserved.
+
+=head1 LICENSE
 
 This script is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
@@ -105,33 +109,3 @@ modify it under the same terms as Perl itself.
 perl(1), perltie(1), Tie::StdHash(1)
 
 =cut
-
-#
-# $Log: Cannabinol.pm,v $
-# Revision 1.9  2005/08/14 11:35:57  dave
-# Added details of where to get updates.
-#
-# Revision 1.8  2004/10/23 09:47:21  dave
-# Fixed problems caused by moving POD around in the last version.
-#
-# Revision 1.7  2004/10/23 09:36:50  dave
-# Improved test coverage.
-#
-# Revision 1.6  2002/09/23 19:02:28  dave
-# Fixed to work with Perl 5.8.0.
-#
-# Revision 1.5  2002/07/12 18:32:21  dave
-# Corrected Attribute::Handlers dependency.
-#
-# Revision 1.4  2001/12/09 19:12:54  dave
-# Added Attribute::Handlers interface.
-#
-# Revision 1.3  2001/09/05 19:48:15  dave
-# fixed a very serious bug where instead of returning a random value from the hash we were, in fact, almost always returning C<undef>.
-#
-# Revision 1.2  2001/09/03 19:58:08  dave
-# Minor fixes
-#
-# Revision 1.1  2001/09/02 17:06:18  dave
-# Initial revision
-#
