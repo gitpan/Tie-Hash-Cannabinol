@@ -1,77 +1,182 @@
-2008-03-08  dave
+-------------------------------------------------------------------
+Mon Nov 24 17:19:31 CET 2014 - dave@dave.org.uk
 
-	* [r29] README.xml: Added http://code.mag-sol.com/ to README
-	* [r28] lib/Tie/Hash/Cannabinol.pm: Switched some details from
-	  dave.org.uk to mag-sol.com
-	* [r27] Build.PL: Increment release number
-	* [r26] lib/Tie/Hash/Cannabinol.pm: Add 'use warnings' (as we're
-	  already forcing 5.6)
-	* [r25] Build.PL: Fix prerequisites
-	* [r24] t/test.t: Switch to using Test::More.
-	* [r23] lib/Tie/Hash/Cannabinol.pm: Added LICENCE (sic!) section.
-	  Switched to svn revision number.
-	  Removed old CVS change log.
+- Renamed README.xml to README.
+- commit 72d3882
 
-2005-08-14  dave
+-------------------------------------------------------------------
+Sun Feb 22 00:01:03 CET 2009 - dave@dave.org.uk
 
-	* [r22] lib/Tie/Hash/Cannabinol.pm: Added details of where to get
-	  updates.
-	* [r20] t/pod-coverage.t, t/test.t, t/test2.t: Cleaned up some
-	  tests. Added pod coverage tests.
-	* [r19] MANIFEST: Added Build.PL
-	* [r18] Build.PL, Makefile.PL: Replaced Makefile.PL with Build.PL.
-	* [r17] MANIFEST: Moved Cannabinol.pm. Added pod-coverage.t.
-	* [r16] MANIFEST: *** empty log message ***
+- Changed versioning system.
+- commit bfb37a4
 
-2004-10-23  dave
+-------------------------------------------------------------------
+Sat Mar  8 13:04:36 CET 2008 - dave@dave.org.uk
 
-	* [r15] MANIFEST, lib/Tie/Hash/Cannabinol.pm: Fixed problems caused
-	  by moving POD around in the last version.
-	* [r14] README.xml: Added README.xml
-	* [r13] lib/Tie/Hash/Cannabinol.pm, t/pod.t: Improved test
-	  coverage.
-	* [r12] t/test2.t: Added Schwern's most excellent tests.
+- Added http://code.mag-sol.com/ to README
+- commit d50104a
 
-2004-05-22  dave
+-------------------------------------------------------------------
+Sat Mar  8 13:01:49 CET 2008 - dave@dave.org.uk
 
-	* [r11] t/pod.t, t/test.t: Fiddled with tests a bit
+- Switched some details from dave.org.uk to mag-sol.com
+- commit 37f31db
 
-2004-05-12  dave
+-------------------------------------------------------------------
+Sat Mar  8 12:58:13 CET 2008 - dave@dave.org.uk
 
-	* [r10] Makefile.PL: Added Makefile.PL to cvs
-	* [r9] COPYING, MANIFEST: Added COPYING and MANIFEST to cvs
-	* [r8] t, t/pod.t, t/test.t: Added test files.
+- Increment release number
+- commit f04fe41
 
-2002-09-23  dave
+-------------------------------------------------------------------
+Sat Mar  8 12:51:57 CET 2008 - dave@dave.org.uk
 
-	* [r7] lib/Tie/Hash/Cannabinol.pm: Fixed to work with Perl 5.8.0.
+- Add 'use warnings' (as we're already forcing 5.6)
+- commit 48483e2
 
-2002-07-12  dave
+-------------------------------------------------------------------
+Sat Mar  8 12:50:40 CET 2008 - dave@dave.org.uk
 
-	* [r6] lib/Tie/Hash/Cannabinol.pm: Corrected Attribute::Handlers
-	  dependency.
+- Fix prerequisites
+- commit f4904fb
 
-2001-12-09  dave
+-------------------------------------------------------------------
+Sat Mar  8 12:48:24 CET 2008 - dave@dave.org.uk
 
-	* [r5] lib/Tie/Hash/Cannabinol.pm: Added Attribute::Handlers
-	  interface.
+- Switch to using Test::More.
+- commit 301f305
 
-2001-09-05  dave
+-------------------------------------------------------------------
+Sat Mar  8 12:44:16 CET 2008 - dave@dave.org.uk
 
-	* [r4] lib/Tie/Hash/Cannabinol.pm: fixed a very serious bug where
-	  instead of returning a random value from the hash we were, in
-	  fact, almost always returning C<undef>.
+- Added LICENCE (sic!) section.
+  Switched to svn revision number.
+  Removed old CVS change log.
+- commit 733e400
 
-2001-09-03  dave
+-------------------------------------------------------------------
+Sun Aug 14 13:35:57 CEST 2005 - dave@dave.org.uk
 
-	* [r3] lib/Tie/Hash/Cannabinol.pm: Minor fixes
+- Added details of where to get updates.
+- commit 2951d6a
 
-2001-09-02  dave
+-------------------------------------------------------------------
+Sun Aug 14 13:35:09 CEST 2005 - dave@dave.org.uk
 
-	* [r2] lib, lib/Tie, lib/Tie/Hash, lib/Tie/Hash/Cannabinol.pm:
-	  Initial revision
+- Cleaned up some tests. Added pod coverage tests.
+- commit 2e2f5bd
 
-2001-09-02  
+-------------------------------------------------------------------
+Sun Aug 14 13:34:25 CEST 2005 - dave@dave.org.uk
 
-	* [r1] .: New repository initialized by cvs2svn.
+- Added Build.PL
+- commit 3f19596
+
+-------------------------------------------------------------------
+Sun Aug 14 13:33:50 CEST 2005 - dave@dave.org.uk
+
+- Replaced Makefile.PL with Build.PL.
+- commit 4ad06d8
+
+-------------------------------------------------------------------
+Sun Aug 14 13:31:31 CEST 2005 - dave@dave.org.uk
+
+- Moved Cannabinol.pm. Added pod-coverage.t.
+- commit 5600133
+
+-------------------------------------------------------------------
+Sun Aug 14 13:20:35 CEST 2005 - dave@dave.org.uk
+
+- *** empty log message ***
+- commit d7146b3
+
+-------------------------------------------------------------------
+Sat Oct 23 11:47:21 CEST 2004 - dave@dave.org.uk
+
+- Fixed problems caused by moving POD around in the last version.
+- commit 597120e
+
+-------------------------------------------------------------------
+Sat Oct 23 11:40:28 CEST 2004 - dave@dave.org.uk
+
+- Added README.xml
+- commit fa593b4
+
+-------------------------------------------------------------------
+Sat Oct 23 11:36:50 CEST 2004 - dave@dave.org.uk
+
+- Improved test coverage.
+- commit a4aa167
+
+-------------------------------------------------------------------
+Sat Oct 23 11:26:22 CEST 2004 - dave@dave.org.uk
+
+- Added Schwern's most excellent tests.
+- commit 3a22271
+
+-------------------------------------------------------------------
+Sat May 22 23:59:20 CEST 2004 - dave@dave.org.uk
+
+- Fiddled with tests a bit
+- commit f919bd4
+
+-------------------------------------------------------------------
+Thu May 13 00:59:05 CEST 2004 - dave@dave.org.uk
+
+- Added Makefile.PL to cvs
+- commit 28e50c4
+
+-------------------------------------------------------------------
+Thu May 13 00:57:02 CEST 2004 - dave@dave.org.uk
+
+- Added COPYING and MANIFEST to cvs
+- commit 824c6a1
+
+-------------------------------------------------------------------
+Wed May 12 21:26:36 CEST 2004 - dave@dave.org.uk
+
+- Added test files.
+- commit 6d9143b
+
+-------------------------------------------------------------------
+Mon Sep 23 21:02:28 CEST 2002 - dave@dave.org.uk
+
+- Fixed to work with Perl 5.8.0.
+- commit 944b25e
+
+-------------------------------------------------------------------
+Fri Jul 12 20:32:21 CEST 2002 - dave@dave.org.uk
+
+- Corrected Attribute::Handlers dependency.
+- commit 19ccadd
+
+-------------------------------------------------------------------
+Sun Dec  9 20:12:54 CET 2001 - dave@dave.org.uk
+
+- Added Attribute::Handlers interface.
+- commit 2a7a1ad
+
+-------------------------------------------------------------------
+Wed Sep  5 21:48:15 CEST 2001 - dave@dave.org.uk
+
+- fixed a very serious bug where instead of returning a random value from the hash we were, in fact, almost always returning C<undef>.
+- commit 87e4864
+
+-------------------------------------------------------------------
+Mon Sep  3 21:58:08 CEST 2001 - dave@dave.org.uk
+
+- Minor fixes
+- commit 20fe69a
+
+-------------------------------------------------------------------
+Sun Sep  2 19:06:18 CEST 2001 - dave@dave.org.uk
+
+- Initial revision
+- commit 3c41995
+
+-------------------------------------------------------------------
+Sun Sep  2 19:06:18 CEST 2001 - (no author)
+
+- New repository initialized by cvs2svn.
+- commit b0f8277
 

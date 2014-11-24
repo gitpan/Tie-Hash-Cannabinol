@@ -1,4 +1,4 @@
-# $Id: Cannabinol.pm 28 2008-03-08 12:01:49Z dave $
+# $Id$
 
 =head1 NAME
 
@@ -40,7 +40,7 @@ use vars qw($VERSION @ISA);
 use Tie::Hash;
 use Attribute::Handlers autotie => { "__CALLER__::Stoned" => __PACKAGE__ };
 
-$VERSION = sprintf "%d", '$Revision: 28 $ ' =~ /(\d+)/;
+$VERSION = 1.10;
 @ISA = qw(Tie::StdHash);
 
 =head2 STORE
